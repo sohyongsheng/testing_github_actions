@@ -8,9 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version:
-          - 3.5
-          - 3.6
+        python-versions: [3.5, 3.6]
     steps:
       - uses: actions/checkout@v2
       - name: Run my tryout Python script.
