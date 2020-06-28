@@ -11,10 +11,10 @@ jobs:
         python-versions: [3.6, 3.7, 3.8]
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python ${{matrix.python-versions}}
+      - name: Set up Python ${{ matrix.python-versions }}
         uses: actions/setup-python@v2
         with:
-          python-version: ${{matrix.python-versions}}
+          python-version: ${{ matrix.python-versions }}
       - name: Install requirements.
         run: |
           pip install -U pip setuptools wheel
