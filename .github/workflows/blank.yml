@@ -11,12 +11,10 @@ jobs:
         python-versions: [3.6, 3.7, 3.8]
     steps:
       - uses: actions/checkout@v2
-
       - name: Set up Python ${{matrix.python-versions}}
         uses: actions/setup-python@v2
         with:
           python-version: ${{matrix.python-versions}}
-
       - name: Run my tryout Python script.
         run: python3 tryout.py
 
